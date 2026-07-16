@@ -1,5 +1,11 @@
 import streamlit as st
-# Dynamic routing imports
+import sys
+import os
+
+# Inject the current root directory path to prevent Streamlit Cloud routing errors
+sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
+
+# Now safely import your clean modules
 from modules import data_science, machine_learning, ai_engineering, gen_ai, agentic_ai
 
 # Page Configuration
