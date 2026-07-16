@@ -24,11 +24,13 @@ def render():
             st.markdown("#### 📈 Regularized Regression")
             st.write("Mitigating overfitting using L1/L2 penalties and parameter optimization.")
             st.code("from sklearn.linear_model import Ridge\nridge = Ridge(alpha=1.0).fit(X, y)", language="python")
-    with ml2 = m2:
+#  THE CORRECTED CLEAN VERSION:
+    with m2:
         with st.container(border=True):
             st.markdown("#### 🧬 Dimensionality Reduction")
             st.write("Compressing massive feature spaces using Principal Component Analysis.")
             st.code("from sklearn.decomposition import PCA\npca = PCA(n_components=2).fit(X)", language="python")
+
     with m3:
         with st.container(border=True):
             st.markdown("#### ⏳ Time Series & Forecasts")
